@@ -48,3 +48,4 @@ begin
     
     vctr <= std_logic_vector(s_vctr);
 end process;
+end Behavioral;
