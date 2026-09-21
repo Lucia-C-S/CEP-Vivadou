@@ -1,114 +1,245 @@
-```vhdl
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity vga_interface is
     Port (
-        clk          : in  std_logic;
-        reset        : in  std_logic;
-        ce           : in  std_logic;
-        pixel_colour : in  std_logic_vector(11 downto 0);
+        clk          : in  STD_LOGIC;
+        reset        : in  STD_LOGIC;
+        ce_25MHz     : in  STD_LOGIC;
+        pixel_colour : in  STD_LOGIC_VECTOR(11 downto 0);
 
-        hctr         : out std_logic_vector(9 downto 0);
-        vctr         : out std_logic_vector(9 downto 0);
+        hctr         : out STD_LOGIC_VECTOR(9 downto 0);
+        vctr         : out STD_LOGIC_VECTOR(9 downto 0);
 
-        hsync        : out std_logic;
-        vsync        : out std_logic;
+        hsync        : out STD_LOGIC;
+        vsync        : out STD_LOGIC;
 
-        R            : out std_logic_vector(3 downto 0);
-        G            : out std_logic_vector(3 downto 0);
-        B            : out std_logic_vector(3 downto 0)
+        R            : out STD_LOGIC_VECTOR(3 downto 0);
+        G            : out STD_LOGIC_VECTOR(3 downto 0);
+        B            : out STD_LOGIC_VECTOR(3 downto 0)
     );
 end vga_interface;
 
 
 architecture Structural of vga_interface is
 
-    signal h_count : std_logic_vector(9 downto 0);
-    signal v_count : std_logic_vector(9 downto 0);
+    ----------------------------------------------------------------
+    -- COMPONENT DECLARATIONS
+    ----------------------------------------------------------------
 
-    signal h_tc : std_logic;
+    component horizontal_ctr
+        Port (
+            ce_25MHz : in  STD_LOGIC;
+            clk      : in  STD_LOGIC;
+            reset    : in  STD_LOGIC;
+            hctr     : out STD_LOGIC_VECTOR(9 downto 0)
+        );
+    end component;
+
+
+    component vertical_ctr
+        Port (
+            re_hsync : in  STD_LOGIC;
+            clk      : in  STD_LOGIC;
+            reset    : in  STD_LOGIC;
+            vctr     : out STD_LOGIC_VECTOR(9 downto 0)
+        );
+    end component;
+
+
+    component hsync_generator
+        Port (
+            clk      : in  STD_LOGIC;
+            reset    : in  STD_LOGIC;
+            ce_25MHz : in  STD_LOGIC;
+            hctr     : in  STD_LOGIC_VECTOR(9 downto 0);
+            hsync    : out STD_LOGIC
+        );
+    end component;
+
+
+    component vsync_generator
+        Port (
+            clk      : in  STD_LOGIC;
+            reset    : in  STD_LOGIC;
+            ce_25MHz : in  STD_LOGIC;
+            vctr     : in  STD_LOGIC_VECTOR(9 downto 0);
+            vsync    : out STD_LOGIC
+        );
+    end component;
+
+
+    component edge_detector
+        Port (
+            input              : in  STD_LOGIC;
+            clk                : in  STD_LOGIC;
+            reset              : in  STD_LOGIC;
+            input_rising_edge  : out STD_LOGIC;
+            input_falling_edge : out STD_LOGIC;
+            input_sync         : out STD_LOGIC
+        );
+    end component;
+
+
+    component blank_generator
+        Port (
+            hctr  : in  STD_LOGIC_VECTOR(9 downto 0);
+            vctr  : in  STD_LOGIC_VECTOR(9 downto 0);
+            blank : out STD_LOGIC
+        );
+    end component;
+
+
+    component RGB_generator_Nexys_4_DDR
+        Port (
+            clk          : in  STD_LOGIC;
+            reset        : in  STD_LOGIC;
+            ce_25MHz     : in  STD_LOGIC;
+            blank        : in  STD_LOGIC;
+            pixel_colour : in  STD_LOGIC_VECTOR(11 downto 0);
+
+            R : out STD_LOGIC_VECTOR(3 downto 0);
+            G : out STD_LOGIC_VECTOR(3 downto 0);
+            B : out STD_LOGIC_VECTOR(3 downto 0)
+        );
+    end component;
+
+
+    ----------------------------------------------------------------
+    -- INTERNAL SIGNALS
+    ----------------------------------------------------------------
+
+    signal hctr_int : STD_LOGIC_VECTOR(9 downto 0);
+    signal vctr_int : STD_LOGIC_VECTOR(9 downto 0);
+
+    signal hsync_int : STD_LOGIC;
+    signal vsync_int : STD_LOGIC;
+
+    signal hsync_rising_edge : STD_LOGIC;
+
+    signal hsync_falling_edge : STD_LOGIC;
+
+    signal hsync_sync : STD_LOGIC;
+
+    signal blank_int : STD_LOGIC;
+
 
 begin
 
     ----------------------------------------------------------------
-    -- Horizontal counter: 0 to 799
+    -- HORIZONTAL COUNTER
+    -- Counts from 0 to 799
     ----------------------------------------------------------------
-    HORIZONTAL_COUNTER : entity horizontal_ctr
+
+    HORIZONTAL_COUNTER_INST : horizontal_ctr
         port map (
-            clk   => clk,
-            reset => reset,
-            ce    => ce,
-            h_ctr => h_count,
-            tc    => h_tc
+            ce_25MHz => ce_25MHz,
+            clk      => clk,
+            reset    => reset,
+            hctr     => hctr_int
         );
 
 
     ----------------------------------------------------------------
-    -- Vertical counter: 0 to 524
+    -- HORIZONTAL SYNC GENERATOR
     ----------------------------------------------------------------
-    VERTICAL_COUNTER : entity vertical_ctr
+
+    HSYNC_GENERATOR_INST : hsync_generator
         port map (
-            clk   => clk,
-            reset => reset,
-            ce    => h_tc,
-            v_ctr => v_count
+            clk      => clk,
+            reset    => reset,
+            ce_25MHz => ce_25MHz,
+            hctr     => hctr_int,
+            hsync    => hsync_int
         );
 
 
     ----------------------------------------------------------------
-    -- Horizontal sync generator
-    ----------------------------------------------------------------
-    HORIZONTAL_SYNC : entity hsync_generator
-        port map (
-            h_ctr => h_count,
-            hsync => hsync
-        );
-
-
-    ----------------------------------------------------------------
-    -- Vertical sync generator
-    ----------------------------------------------------------------
-    VERTICAL_SYNC : entity vsync_generator
-        port map (
-            v_ctr => v_count,
-            vsync => vsync
-        );
-
-
-    ----------------------------------------------------------------
-    -- Output counters
-    ----------------------------------------------------------------
-    hctr <= h_count;
-    vctr <= v_count;
-
-
-    ----------------------------------------------------------------
-    -- RGB output
+    -- EDGE DETECTOR
     --
-    -- Visible VGA region:
-    --     horizontal: 0 to 639
-    --     vertical:   0 to 479
-    --
-    -- pixel_colour:
-    --     [11:8] = Red
-    --     [7:4]  = Green
-    --     [3:0]  = Blue
+    -- Detects the rising edge of HSYNC.
+    -- This rising edge is used to advance the vertical counter.
     ----------------------------------------------------------------
-    R <= pixel_colour(11 downto 8)
-         when (unsigned(h_count) < 640 and
-               unsigned(v_count) < 480)
-         else "0000";
 
-    G <= pixel_colour(7 downto 4)
-         when (unsigned(h_count) < 640 and
-               unsigned(v_count) < 480)
-         else "0000";
+    EDGE_DETECTOR_INST : edge_detector
+        port map (
+            input              => hsync_int,
+            clk                => clk,
+            reset              => reset,
+            input_rising_edge  => hsync_rising_edge,
+            input_falling_edge => hsync_falling_edge,
+            input_sync         => hsync_sync
+        );
 
-    B <= pixel_colour(3 downto 0)
-         when (unsigned(h_count) < 640 and
-               unsigned(v_count) < 480)
-         else "0000";
+
+    ----------------------------------------------------------------
+    -- VERTICAL COUNTER
+    -- Counts from 0 to 524.
+    -- Advances on the rising edge of HSYNC.
+    ----------------------------------------------------------------
+
+    VERTICAL_COUNTER_INST : vertical_ctr
+        port map (
+            re_hsync => hsync_rising_edge,
+            clk      => clk,
+            reset    => reset,
+            vctr     => vctr_int
+        );
+
+
+    ----------------------------------------------------------------
+    -- VERTICAL SYNC GENERATOR
+    ----------------------------------------------------------------
+
+    VSYNC_GENERATOR_INST : vsync_generator
+        port map (
+            clk      => clk,
+            reset    => reset,
+            ce_25MHz => ce_25MHz,
+            vctr     => vctr_int,
+            vsync    => vsync_int
+        );
+
+
+    ----------------------------------------------------------------
+    -- BLANK GENERATOR
+    ----------------------------------------------------------------
+
+    BLANK_GENERATOR_INST : blank_generator
+        port map (
+            hctr  => hctr_int,
+            vctr  => vctr_int,
+            blank => blank_int
+        );
+
+
+    ----------------------------------------------------------------
+    -- RGB GENERATOR
+    ----------------------------------------------------------------
+
+    RGB_GENERATOR_INST : RGB_generator_Nexys_4_DDR
+        port map (
+            clk          => clk,
+            reset        => reset,
+            ce_25MHz     => ce_25MHz,
+            blank        => blank_int,
+            pixel_colour => pixel_colour,
+
+            R => R,
+            G => G,
+            B => B
+        );
+
+
+    ----------------------------------------------------------------
+    -- OUTPUT CONNECTIONS
+    ----------------------------------------------------------------
+
+    hctr  <= hctr_int;
+    vctr  <= vctr_int;
+
+    hsync <= hsync_int;
+    vsync <= vsync_int;
 
 end Structural;

@@ -1,0 +1,18 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/VGA_interface.vhd,1789975000,vhdl,,,,vga_interface,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/horizontal_ctr.vhd,1789930981,vhdl,,,,horizontal_ctr,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/mux_10b_counter.vhd,1789939172,vhdl,,,,mux_10bit_counter,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/mux_1b_ce.vhd,1789939220,vhdl,,,,mux_1bit_ce,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/tb.vhd,1789978263,vhdl,,,,tb_top_board_vga_interface_phase_1,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/top_board_VGA_interface_phase_1.vhd,1789978907,vhdl,,,,top_board_vga_interface_phase_1,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/vertical_ctr.vhd,1789978483,vhdl,,,,vertical_ctr,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/VHDL_Files/CE_generator_25MHz.vhd,1789548744,vhdl,,,,ce_generator_25mhz,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/VHDL_Files/CE_generator_50Hz.vhd,1789548744,vhdl,,,,ce_generator_50hz,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/new/RGB_generator_Nexys_4_DDR.vhd,1789947224,vhdl,,,,rgb_generator_nexys_4_ddr,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/new/blank_generator.vhd,1789941725,vhdl,,,,blank_generator,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/new/edge_detector.vhd,1789941667,vhdl,,,,edge_detector,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/new/hsync_generator.vhd,1789978425,vhdl,,,,hsync_generator,,,,,,,,
+C:/vivadou_CEP/phase_1/Project_1_CEP/new/vsync_generator.vhd,1789940795,vhdl,,,,vsync_generator,,,,,,,,

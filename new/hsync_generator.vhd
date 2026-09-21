@@ -24,14 +24,15 @@ begin
 
             elsif ce_25MHz = '1' then
 
-                if (unsigned(hctr) >= 664) and
-                   (unsigned(hctr) <= 759) then
+                if unsigned(hctr) >= 664 and
+                   unsigned(hctr) <= 759 then
                     hsync <= '0';
                 else
                     hsync <= '1';
                 end if;
 
             end if;
+
         end if;
     end process;
 

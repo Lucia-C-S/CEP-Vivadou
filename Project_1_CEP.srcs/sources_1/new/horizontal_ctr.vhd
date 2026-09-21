@@ -31,21 +31,29 @@ entity horizontal_ctr is
 end horizontal_ctr;
 
 architecture Behavioral of horizontal_ctr is
-      signal s_hctr : unsigned(9 downto 0); 
+    signal s_hctr : unsigned(9 downto 0) := (others => '0');
 begin
+
     process(clk)
-begin
-    if rising_edge(clk) then
-        if reset = '1' then
-            s_hctr <= (others => '0');
-        elsif s_hctr = 799 then
-            s_hctr <= (others => '0');
-        else
-            s_hctr <= s_hctr + 1;
+    begin
+        if rising_edge(clk) then
+
+            if reset = '1' then
+                s_hctr <= (others => '0');
+
+            elsif ce_25MHz = '1' then
+
+                if s_hctr = 799 then
+                    s_hctr <= (others => '0');
+                else
+                    s_hctr <= s_hctr + 1;
+                end if;
+
+            end if;
+
         end if;
-    end if;
-    
+    end process;
+
     hctr <= std_logic_vector(s_hctr);
-end process;
 
 end Behavioral;
