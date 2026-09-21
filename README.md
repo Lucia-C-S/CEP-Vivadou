@@ -1,4 +1,4 @@
-# pastill.ia
+# Instrucciones de uso de Git
 ---
 
 ### 1. Create and Clone Repositories
