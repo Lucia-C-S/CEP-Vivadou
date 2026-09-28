@@ -73,6 +73,11 @@ git commit -am "Commit message"
 git push
 ```
 
+y a veces: 
+```bash
+git remote set-url origin https://github.com/Lucia-C-S/CEP-Vivadou.git
+```
+
 #### Pull Latest Changes
 
 ```bash
