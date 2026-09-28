@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Sep 27 10:33:01 2026
+# Process ID: 26832
+# Current directory: C:/vivadou_CEP/phase_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13320 C:\vivadou_CEP\phase_2\phase_2.xpr
+# Log file: C:/vivadou_CEP/phase_2/vivado.log
+# Journal file: C:/vivadou_CEP/phase_2\vivado.jou
+# Running On: LU, OS: Windows, CPU Frequency: 2395 MHz, CPU Physical cores: 32, Host memory: 67838 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/vivadou_CEP/phase_2/phase_2.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/vivadou_CEP/phase_2/phase_2.srcs/sources_1/new
+close [ open C:/vivadou_CEP/phase_2/phase_2.srcs/sources_1/new/FMS_VGA.vhd w ]
+add_files C:/vivadou_CEP/phase_2/phase_2.srcs/sources_1/new/FMS_VGA.vhd
+update_compile_order -fileset sources_1

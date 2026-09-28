@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_top_board_VGA_interface_phase_1_behav" "xil_defaultlib.tb_top_board_VGA_interface_phase_1" -log "elaborate.log" 

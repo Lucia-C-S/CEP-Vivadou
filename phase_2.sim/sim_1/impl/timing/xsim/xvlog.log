@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/vivadou_CEP/phase_2/phase_2.sim/sim_1/impl/timing/xsim/tb_top_board_VGA_interface_phase_1_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CE_generator_25MHz
+INFO: [VRFC 10-311] analyzing module CE_generator_50Hz
+INFO: [VRFC 10-311] analyzing module RGB_generator_Nexys_4_DDR
+INFO: [VRFC 10-311] analyzing module edge_detector
+INFO: [VRFC 10-311] analyzing module horizontal_ctr
+INFO: [VRFC 10-311] analyzing module hsync_generator
+INFO: [VRFC 10-311] analyzing module top_board_VGA_interface_phase_1
+INFO: [VRFC 10-311] analyzing module vertical_ctr
+INFO: [VRFC 10-311] analyzing module vga_interface
+INFO: [VRFC 10-311] analyzing module vsync_generator
+INFO: [VRFC 10-311] analyzing module glbl
