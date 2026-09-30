@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_5.1.srcs/sources_1/new/function1.vhd" \
+"../../../../project_5.1.srcs/sources_1/new/function2.vhd" \
+"../../../../project_5.1.srcs/sources_1/new/function3.vhd" \
+"../../../../project_5.1.srcs/sources_1/new/number_detection_circuit.vhd" \
+"../../../../project_5.1.srcs/sim_1/new/tb.vhd" \
+
+# Do not sort compile order
+nosort

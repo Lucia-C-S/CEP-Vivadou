@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/EDIX_GRUPO2/P8 - YA/project_8_1/project_8_1.srcs/sources_1/new/signed_multiplier_4_bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'signed_multiplier_4_bits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/EDIX_GRUPO2/P8 - YA/project_8_1/project_8_1.srcs/sim_1/new/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb'

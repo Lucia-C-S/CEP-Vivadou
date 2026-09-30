@@ -1,0 +1,45 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Wed Nov  5 20:04:22 2025
+| Host         : DESKTOP-7TDBS96 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file signed_multiplier_4_bits_methodology_drc_routed.rpt -pb signed_multiplier_4_bits_methodology_drc_routed.pb -rpx signed_multiplier_4_bits_methodology_drc_routed.rpx
+| Design       : signed_multiplier_4_bits
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 2
++---------+----------+------------------+--------+
+| Rule    | Severity | Description      | Checks |
++---------+----------+------------------+--------+
+| SYNTH-9 | Warning  | Small multiplier | 2      |
++---------+----------+------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at product_OBUF[5]_inst_i_1 of size 4x4, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at product_OBUF[7]_inst_i_1 of size 4x4, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1762982310">
+  <File Type="REPORTS-TCL" Name="top_ctr_2_bits_reports.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_ctr_2_bits_power_summary_routed.pb"/>
+  <File Type="BITSTR-MMI" Name="top_ctr_2_bits.mmi"/>
+  <File Type="OPT-DRC" Name="top_ctr_2_bits_drc_opted.rpt"/>
+  <File Type="BG-DRC" Name="top_ctr_2_bits.drc"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_ctr_2_bits_route_status.pb"/>
+  <File Type="BG-BGN" Name="top_ctr_2_bits.bgn"/>
+  <File Type="PLACE-UTIL" Name="top_ctr_2_bits_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_ctr_2_bits_utilization_placed.pb"/>
+  <File Type="PLACE-IO" Name="top_ctr_2_bits_io_placed.rpt"/>
+  <File Type="BG-BIN" Name="top_ctr_2_bits.bin"/>
+  <File Type="PLACE-CTRL" Name="top_ctr_2_bits_control_sets_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_ctr_2_bits_power_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="top_ctr_2_bits.msk"/>
+  <File Type="BITSTR-RBT" Name="top_ctr_2_bits.rbt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_ctr_2_bits_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_ctr_2_bits_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="top_ctr_2_bits_route_status.rpt"/>
+  <File Type="PA-TCL" Name="top_ctr_2_bits.tcl"/>
+  <File Type="ROUTE-PWR" Name="top_ctr_2_bits_power_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="top_ctr_2_bits_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_ctr_2_bits_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="top_ctr_2_bits_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="top_ctr_2_bits.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_ctr_2_bits_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_ctr_2_bits_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="top_ctr_2_bits.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_ctr_2_bits_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_ctr_2_bits_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="top_ctr_2_bits.vdi"/>
+  <File Type="ROUTE-CLK" Name="top_ctr_2_bits_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="top_ctr_2_bits_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="top_ctr_2_bits_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="top_ctr_2_bits_bus_skew_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_ctr_2_bits_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_ctr_2_bits_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_ctr_2_bits_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="top_ctr_2_bits_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_ctr_2_bits_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="top_ctr_2_bits.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_ctr_2_bits_bus_skew_postroute_physopted.pb"/>
+  <File Type="BITSTR-NKY" Name="top_ctr_2_bits.nky"/>
+  <File Type="BITSTR-BMM" Name="top_ctr_2_bits_bd.bmm"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="top_ctr_2_bits.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_ctr_2_bits_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="top_ctr_2_bits_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_ctr_2_bits_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_ctr_2_bits_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_ctr_2_bits_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="top_ctr_2_bits_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="top_ctr_2_bits_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="top_ctr_2_bits_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_ctr_2_bits_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="top_ctr_2_bits_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_ctr_2_bits_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_ctr_2_bits_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="top_ctr_2_bits.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="top_ctr_2_bits_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="top_ctr_2_bits_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="top_ctr_2_bits.rcfi"/>
+  <File Type="CFI_FILE" Name="top_ctr_2_bits.cfi"/>
+  <File Type="RNPI_FILE" Name="top_ctr_2_bits.rnpi"/>
+  <File Type="NPI_FILE" Name="top_ctr_2_bits.npi"/>
+  <File Type="RBD_FILE" Name="top_ctr_2_bits.rbd"/>
+  <File Type="ROUTE-RQS" Name="top_ctr_2_bits_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_ctr_2_bits_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="MMI-FILE" Name="top_ctr_2_bits.mmi"/>
+  <File Type="BIF-FILE" Name="top_ctr_2_bits.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="top_ctr_2_bits_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="top_ctr_2_bits_pld.bif"/>
+  <File Type="LTX-FILE" Name="top_ctr_2_bits.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="top_ctr_2_bits_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="top_ctr_2_bits_pld.ltx"/>
+  <File Type="RCDO-FILE" Name="top_ctr_2_bits.rcdo"/>
+  <File Type="MARKER-RCDO-FILE" Name="top_ctr_2_bits_markers.rcdo"/>
+  <File Type="PL-RCDO-FILE" Name="top_ctr_2_bits_pld.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="top_ctr_2_bits_markers.rnpi"/>
+  <File Type="BOOT_RNPI_FILE" Name="top_ctr_2_bits_boot.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="top_ctr_2_bits_pld.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="top_ctr_2_bits_boot_markers.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="top_ctr_2_bits_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="top_ctr_2_bits_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="top_ctr_2_bits_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="top_ctr_2_bits_pld_unmask.rnpi"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="top_ctr_2_bits_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="top_ctr_2_bits_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="top_ctr_2_bits_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="top_ctr_2_bits_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="top_ctr_2_bits_pld_unmask.rcdo"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ctr_2_bits.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/edge_detector.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_ctr_2_bits.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_ctr_2_bits"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Basys_3_master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

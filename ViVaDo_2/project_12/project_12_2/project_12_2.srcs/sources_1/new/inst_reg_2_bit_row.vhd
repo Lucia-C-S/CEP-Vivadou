@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity inst_reg_2_bits_row is
+    Port ( reset, ce, clk : in STD_LOGIC;
+           d : in STD_LOGIC_VECTOR (1 downto 0);
+           q_row : out STD_LOGIC_VECTOR (1 downto 0));
+end inst_reg_2_bits_row;
+
+architecture Behavioral of inst_reg_2_bits_row is
+    signal Qaux: std_logic_vector (1 downto 0);
+begin
+
+process (clk, reset)
+
+begin
+
+if (rising_edge(clk)) then
+               
+        if (reset = '1') then Qaux <= "00";     
+        elsif (ce = '1') then Qaux <= d;
+        else Qaux <= Qaux; --no change --(ce = '0')
+        end if;
+ end if;
+
+end process;  
+q_row <= Qaux;
+
+end Behavioral;

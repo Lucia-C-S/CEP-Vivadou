@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Oct 16 11:31:12 2025
+# Process ID         : 5524
+# Current directory  : C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_5.1/project_5.1.runs/impl_1
+# Command line       : vivado.exe -log number_detection_circuit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source number_detection_circuit.tcl -notrace
+# Log file           : C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_5.1/project_5.1.runs/impl_1/number_detection_circuit.vdi
+# Journal file       : C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_5.1/project_5.1.runs/impl_1\vivado.jou
+# Running On         : DESKTOP-7TDBS96
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz
+# CPU Frequency      : 2394 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8510 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 18711 MB
+# Available Virtual  : 9761 MB
+#-----------------------------------------------------------
+source number_detection_circuit.tcl -notrace

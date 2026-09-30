@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_8_1.srcs/sources_1/new/signed_multiplier_4_bits.vhd" \
+"../../../../project_8_1.srcs/sim_1/new/tb.vhd" \
+
+# Do not sort compile order
+nosort

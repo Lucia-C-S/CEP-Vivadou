@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "CE_generator_1kHz_behav" "xil_defaultlib.CE_generator_1kHz" -log "elaborate.log" 

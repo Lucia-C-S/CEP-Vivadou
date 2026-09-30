@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1789546474">
+  <File Type="ROUTE-PWR" Name="top_counter_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="top_counter.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_counter_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="top_counter_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="top_counter.msk"/>
+  <File Type="ROUTE-CLK" Name="top_counter_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="top_counter.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_counter_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="top_counter.bit"/>
+  <File Type="BG-DRC" Name="top_counter.drc"/>
+  <File Type="BG-BGN" Name="top_counter.bgn"/>
+  <File Type="BG-BIN" Name="top_counter.bin"/>
+  <File Type="BITSTR-RBT" Name="top_counter.rbt"/>
+  <File Type="BITSTR-NKY" Name="top_counter.nky"/>
+  <File Type="BITSTR-BMM" Name="top_counter_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="top_counter.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_counter_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="top_counter.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="top_counter.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="top_counter_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="top_counter.hwdef"/>
+  <File Type="PLACE-IO" Name="top_counter_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="top_counter_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_counter_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="top_counter_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_counter_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="top_counter_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_counter_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_counter_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="top_counter_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_counter_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="top_counter_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_counter_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_counter_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_counter_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_counter_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_counter_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_counter_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="top_counter_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="top_counter_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="top_counter_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="top_counter_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="top_counter_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="top_counter_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_counter_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="top_counter_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_counter_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_counter_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_counter_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_counter_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_counter_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="top_counter_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_counter_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_counter_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_counter_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_counter_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="top_counter.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="top_counter_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="top_counter_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="top_counter.rcfi"/>
+  <File Type="CFI_FILE" Name="top_counter.cfi"/>
+  <File Type="RNPI_FILE" Name="top_counter.rnpi"/>
+  <File Type="NPI_FILE" Name="top_counter.npi"/>
+  <File Type="RBD_FILE" Name="top_counter.rbd"/>
+  <File Type="ROUTE-RQS" Name="top_counter_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_counter_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../Users/lucia/Documents/UNI/3º/CEP/lab/session_0/VHDL_Files/CE_generator_1kHz.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Users/lucia/Documents/UNI/3º/CEP/lab/session_0/VHDL_Files/D_flip_flop.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Users/lucia/Documents/UNI/3º/CEP/lab/session_0/VHDL_Files/counter_8_bits_lesson_0_WRONG.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Users/lucia/Documents/UNI/3º/CEP/lab/session_0/VHDL_Files/edge_detector.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pushbutton.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_counter"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/Nexys4DDR_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/counter_8_bits_lesson_0.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

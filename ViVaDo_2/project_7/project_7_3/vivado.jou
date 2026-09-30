@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Sep 14 19:47:41 2026
+# Process ID: 40048
+# Current directory: C:/vivadou_CEP/ViVaDo_2/project_7/project_7_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33192 C:\vivadou_CEP\ViVaDo_2\project_7\project_7_3\project_7_3.xpr
+# Log file: C:/vivadou_CEP/ViVaDo_2/project_7/project_7_3/vivado.log
+# Journal file: C:/vivadou_CEP/ViVaDo_2/project_7/project_7_3\vivado.jou
+# Running On: LU, OS: Windows, CPU Frequency: 2395 MHz, CPU Physical cores: 32, Host memory: 67838 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/vivadou_CEP/ViVaDo_2/project_7/project_7_3/project_7_3.xpr
+open_project C:/vivadou_CEP/ViVaDo_2/project_7/project_7_3/project_7_3.xpr
+open_project C:/vivadou_CEP/ViVaDo_2/project_7/project_7_2/project_7_2.xpr
+open_project C:/vivadou_CEP/ViVaDo_2/project_7/project_7_3/project_7_3.xpr

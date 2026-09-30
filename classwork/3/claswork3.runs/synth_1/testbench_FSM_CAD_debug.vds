@@ -1,0 +1,252 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Sep 28 10:52:03 2026
+# Process ID: 25120
+# Current directory: C:/vivadou_CEP/classwork/3/claswork3.runs/synth_1
+# Command line: vivado.exe -log testbench_FSM_CAD_debug.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_FSM_CAD_debug.tcl
+# Log file: C:/vivadou_CEP/classwork/3/claswork3.runs/synth_1/testbench_FSM_CAD_debug.vds
+# Journal file: C:/vivadou_CEP/classwork/3/claswork3.runs/synth_1\vivado.jou
+# Running On: LU, OS: Windows, CPU Frequency: 2395 MHz, CPU Physical cores: 32, Host memory: 67838 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/lucia/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source testbench_FSM_CAD_debug.tcl -notrace
+Command: synth_design -top testbench_FSM_CAD_debug -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4516
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1336.551 ; gain = 439.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'testbench_FSM_CAD_debug' [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:7]
+INFO: [Synth 8-3491] module 'FSM_CAD_debug' declared at 'C:/vivadou_CEP/classwork/3/FSM_CAD_debug_INCOMPLETE.vhd:9' bound to instance 'FSM_CAD_debug_inst' of component 'FSM_CAD_debug' [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'FSM_CAD_debug' [C:/vivadou_CEP/classwork/3/FSM_CAD_debug_INCOMPLETE.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'FSM_CAD_debug' (0#1) [C:/vivadou_CEP/classwork/3/FSM_CAD_debug_INCOMPLETE.vhd:17]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:61]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:73]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:75]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'testbench_FSM_CAD_debug' (0#1) [C:/vivadou_CEP/classwork/3/testbench_FSM_CAD_debug_INCOMPLETE.vhd:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1443.023 ; gain = 546.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1443.023 ; gain = 546.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1443.023 ; gain = 546.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1443.023 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/vivadou_CEP/classwork/3/basic_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/vivadou_CEP/classwork/3/basic_constraints.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/classwork/3/basic_constraints.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/vivadou_CEP/classwork/3/basic_constraints.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/vivadou_CEP/classwork/3/basic_constraints.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/vivadou_CEP/classwork/3/basic_constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1496.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1496.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM_CAD_debug'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                           000001 |                           000000
+*
+                      s1 |                           000010 |                           000001
+                      s2 |                           000100 |                           000010
+                      s3 |                           001000 |                           000100
+                      s6 |                           010000 |                           100000
+                      s4 |                           100000 |                           001000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FSM_CAD_debug'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (FSM_CAD_debug_inst/FSM_onehot_state_reg[5]) is unused and will be removed from module testbench_FSM_CAD_debug.
+WARNING: [Synth 8-3332] Sequential element (FSM_CAD_debug_inst/FSM_onehot_state_reg[4]) is unused and will be removed from module testbench_FSM_CAD_debug.
+WARNING: [Synth 8-3332] Sequential element (FSM_CAD_debug_inst/FSM_onehot_state_reg[3]) is unused and will be removed from module testbench_FSM_CAD_debug.
+WARNING: [Synth 8-3332] Sequential element (FSM_CAD_debug_inst/FSM_onehot_state_reg[2]) is unused and will be removed from module testbench_FSM_CAD_debug.
+WARNING: [Synth 8-3332] Sequential element (FSM_CAD_debug_inst/FSM_onehot_state_reg[1]) is unused and will be removed from module testbench_FSM_CAD_debug.
+WARNING: [Synth 8-3332] Sequential element (FSM_CAD_debug_inst/FSM_onehot_state_reg[0]) is unused and will be removed from module testbench_FSM_CAD_debug.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1496.742 ; gain = 600.062
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1496.742 ; gain = 546.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1496.742 ; gain = 600.062
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1496.742 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1496.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ea1d02a6
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 30 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1496.742 ; gain = 1009.961
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/vivadou_CEP/classwork/3/claswork3.runs/synth_1/testbench_FSM_CAD_debug.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testbench_FSM_CAD_debug_utilization_synth.rpt -pb testbench_FSM_CAD_debug_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 10:52:27 2026...

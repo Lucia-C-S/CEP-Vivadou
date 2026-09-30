@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763636600">
+  <File Type="PA-TCL" Name="dynamic_display_controller.tcl"/>
+  <File Type="REPORTS-TCL" Name="dynamic_display_controller_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="dynamic_display_controller_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="dynamic_display_controller_opt.dcp"/>
+  <File Type="OPT-DRC" Name="dynamic_display_controller_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="dynamic_display_controller_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="dynamic_display_controller_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="dynamic_display_controller_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="dynamic_display_controller.hwdef"/>
+  <File Type="OPT-TIMING" Name="dynamic_display_controller_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="dynamic_display_controller_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="dynamic_display_controller_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="dynamic_display_controller_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="dynamic_display_controller_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="dynamic_display_controller_placed.dcp"/>
+  <File Type="PLACE-IO" Name="dynamic_display_controller_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="dynamic_display_controller_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="dynamic_display_controller_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dynamic_display_controller_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="dynamic_display_controller_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="dynamic_display_controller_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dynamic_display_controller_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="dynamic_display_controller_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="dynamic_display_controller_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dynamic_display_controller_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="dynamic_display_controller_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="dynamic_display_controller_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="dynamic_display_controller_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="dynamic_display_controller_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dynamic_display_controller_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="dynamic_display_controller_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dynamic_display_controller_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="dynamic_display_controller_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="dynamic_display_controller_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="dynamic_display_controller_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="dynamic_display_controller_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="dynamic_display_controller_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dynamic_display_controller_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dynamic_display_controller_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dynamic_display_controller_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="dynamic_display_controller_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="dynamic_display_controller_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="dynamic_display_controller_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="dynamic_display_controller_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dynamic_display_controller_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dynamic_display_controller_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="dynamic_display_controller_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dynamic_display_controller_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="dynamic_display_controller_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="dynamic_display_controller_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="dynamic_display_controller_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="dynamic_display_controller_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="dynamic_display_controller_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="dynamic_display_controller_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dynamic_display_controller_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dynamic_display_controller_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="dynamic_display_controller_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="dynamic_display_controller_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="dynamic_display_controller_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="dynamic_display_controller_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="dynamic_display_controller_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="dynamic_display_controller_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="dynamic_display_controller.bit"/>
+  <File Type="BG-BIN" Name="dynamic_display_controller.bin"/>
+  <File Type="BITSTR-MSK" Name="dynamic_display_controller.msk"/>
+  <File Type="BITSTR-RBT" Name="dynamic_display_controller.rbt"/>
+  <File Type="BITSTR-NKY" Name="dynamic_display_controller.nky"/>
+  <File Type="BITSTR-BMM" Name="dynamic_display_controller_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="dynamic_display_controller.mmi"/>
+  <File Type="PDI-FILE" Name="dynamic_display_controller.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="dynamic_display_controller_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="dynamic_display_controller_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="dynamic_display_controller.rcfi"/>
+  <File Type="CFI_FILE" Name="dynamic_display_controller.cfi"/>
+  <File Type="RNPI_FILE" Name="dynamic_display_controller.rnpi"/>
+  <File Type="RCDO-FILE" Name="dynamic_display_controller.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="dynamic_display_controller_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="dynamic_display_controller_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="dynamic_display_controller_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="dynamic_display_controller_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="dynamic_display_controller_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="dynamic_display_controller_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="dynamic_display_controller_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="dynamic_display_controller_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="dynamic_display_controller_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="dynamic_display_controller_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="dynamic_display_controller_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="dynamic_display_controller_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="dynamic_display_controller_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="dynamic_display_controller_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="dynamic_display_controller_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="dynamic_display_controller.npi"/>
+  <File Type="RBD_FILE" Name="dynamic_display_controller.rbd"/>
+  <File Type="MMI-FILE" Name="dynamic_display_controller.mmi"/>
+  <File Type="BIF-FILE" Name="dynamic_display_controller.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="dynamic_display_controller_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="dynamic_display_controller_pld.bif"/>
+  <File Type="LTX-FILE" Name="dynamic_display_controller.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="dynamic_display_controller_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="dynamic_display_controller_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="dynamic_display_controller.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="dynamic_display_controller.sysdef"/>
+  <File Type="BG-BGN" Name="dynamic_display_controller.bgn"/>
+  <File Type="BG-DRC" Name="dynamic_display_controller.drc"/>
+  <File Type="RDI-RDI" Name="dynamic_display_controller.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="dynamic_display_controller_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="dynamic_display_controller_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/2_to_4_decoder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../project_6/project_6_3/project_6_3.srcs/sources_1/new/bin_to_7_seg_anode.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../project_9/project_9_4/project_9_4.srcs/sources_1/new/ctr_2_bits.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/divider1000.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../project_10_1/project_10_1.srcs/sources_1/new/mux_4c_4b.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dynamic_display_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dynamic_display_controller"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/basys.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/dynamic_display_partial_controller.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

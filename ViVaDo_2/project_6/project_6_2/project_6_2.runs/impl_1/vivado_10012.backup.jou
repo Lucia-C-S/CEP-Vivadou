@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Oct 19 18:24:00 2025
+# Process ID         : 10012
+# Current directory  : C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_6_2/project_6_2.runs/impl_1
+# Command line       : vivado.exe -log mux_1_bit_4_channel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mux_1_bit_4_channel.tcl -notrace
+# Log file           : C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_6_2/project_6_2.runs/impl_1/mux_1_bit_4_channel.vdi
+# Journal file       : C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_6_2/project_6_2.runs/impl_1\vivado.jou
+# Running On         : DESKTOP-7TDBS96
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz
+# CPU Frequency      : 2394 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8510 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 18711 MB
+# Available Virtual  : 6641 MB
+#-----------------------------------------------------------
+source mux_1_bit_4_channel.tcl -notrace

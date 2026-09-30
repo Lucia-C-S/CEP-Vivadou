@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FSM_CAD_debug_INCOMPLETE.vhd" \
+"../../../../testbench_FSM_CAD_debug_INCOMPLETE.vhd" \
+
+# Do not sort compile order
+nosort

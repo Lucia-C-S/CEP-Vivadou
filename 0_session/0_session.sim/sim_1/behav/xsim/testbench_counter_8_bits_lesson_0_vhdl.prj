@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Documents/UNI/3º/CEP/lab/session_0/VHDL_Files/counter_8_bits_lesson_0_WRONG.vhd" \
+"../../../../0_session.srcs/sim_1/new/testbench_counter_8_bits_lesson_0_WRONG.vhd" \
+
+# Do not sort compile order
+nosort

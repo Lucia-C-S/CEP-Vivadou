@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "practice_1_temperatures_behav" "xil_defaultlib.practice_1_temperatures" -log "elaborate.log" 

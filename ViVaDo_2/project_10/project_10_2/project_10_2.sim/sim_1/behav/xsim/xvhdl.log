@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_10/project_10_2/project_10_2.srcs/sources_1/new/2_to_4_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'two_to_4_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_6/project_6_3/project_6_3.srcs/sources_1/new/bin_to_7_seg_anode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bin_to_7_seg_anode'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_10/project_10_2/project_10_2.srcs/sources_1/new/dynamic_display_partial_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dynamic_display_partial_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_10/project_10_1/project_10_1.srcs/sources_1/new/mux_4c_4b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_4c_4b'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_10/project_10_2/project_10_2.srcs/sim_1/new/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb'

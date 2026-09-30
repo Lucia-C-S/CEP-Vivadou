@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1760890947">
+  <File Type="PA-TCL" Name="mux_1_bit_4_channel.tcl"/>
+  <File Type="REPORTS-TCL" Name="mux_1_bit_4_channel_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="mux_1_bit_4_channel_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="mux_1_bit_4_channel_opt.dcp"/>
+  <File Type="OPT-DRC" Name="mux_1_bit_4_channel_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="mux_1_bit_4_channel_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="mux_1_bit_4_channel_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="mux_1_bit_4_channel_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mux_1_bit_4_channel.hwdef"/>
+  <File Type="OPT-TIMING" Name="mux_1_bit_4_channel_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="mux_1_bit_4_channel_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="mux_1_bit_4_channel_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="mux_1_bit_4_channel_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="mux_1_bit_4_channel_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="mux_1_bit_4_channel_placed.dcp"/>
+  <File Type="PLACE-IO" Name="mux_1_bit_4_channel_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="mux_1_bit_4_channel_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mux_1_bit_4_channel_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mux_1_bit_4_channel_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mux_1_bit_4_channel_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="mux_1_bit_4_channel_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mux_1_bit_4_channel_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="mux_1_bit_4_channel_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="mux_1_bit_4_channel_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mux_1_bit_4_channel_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="mux_1_bit_4_channel_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="mux_1_bit_4_channel_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="mux_1_bit_4_channel_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="mux_1_bit_4_channel_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mux_1_bit_4_channel_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="mux_1_bit_4_channel_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mux_1_bit_4_channel_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="mux_1_bit_4_channel_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="mux_1_bit_4_channel_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="mux_1_bit_4_channel_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mux_1_bit_4_channel_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="mux_1_bit_4_channel_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mux_1_bit_4_channel_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mux_1_bit_4_channel_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mux_1_bit_4_channel_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="mux_1_bit_4_channel_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="mux_1_bit_4_channel_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mux_1_bit_4_channel_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mux_1_bit_4_channel_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mux_1_bit_4_channel_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mux_1_bit_4_channel_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mux_1_bit_4_channel_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mux_1_bit_4_channel_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mux_1_bit_4_channel_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="mux_1_bit_4_channel_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="mux_1_bit_4_channel_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mux_1_bit_4_channel_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mux_1_bit_4_channel_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="mux_1_bit_4_channel_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mux_1_bit_4_channel_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mux_1_bit_4_channel_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mux_1_bit_4_channel_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mux_1_bit_4_channel_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mux_1_bit_4_channel_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mux_1_bit_4_channel_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="mux_1_bit_4_channel_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="mux_1_bit_4_channel_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="mux_1_bit_4_channel.bit"/>
+  <File Type="BG-BIN" Name="mux_1_bit_4_channel.bin"/>
+  <File Type="BITSTR-MSK" Name="mux_1_bit_4_channel.msk"/>
+  <File Type="BITSTR-RBT" Name="mux_1_bit_4_channel.rbt"/>
+  <File Type="BITSTR-NKY" Name="mux_1_bit_4_channel.nky"/>
+  <File Type="BITSTR-BMM" Name="mux_1_bit_4_channel_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="mux_1_bit_4_channel.mmi"/>
+  <File Type="PDI-FILE" Name="mux_1_bit_4_channel.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="mux_1_bit_4_channel_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="mux_1_bit_4_channel_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="mux_1_bit_4_channel.rcfi"/>
+  <File Type="CFI_FILE" Name="mux_1_bit_4_channel.cfi"/>
+  <File Type="RNPI_FILE" Name="mux_1_bit_4_channel.rnpi"/>
+  <File Type="RCDO-FILE" Name="mux_1_bit_4_channel.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="mux_1_bit_4_channel_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="mux_1_bit_4_channel_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="mux_1_bit_4_channel_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="mux_1_bit_4_channel_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="mux_1_bit_4_channel_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="mux_1_bit_4_channel_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="mux_1_bit_4_channel_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="mux_1_bit_4_channel_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="mux_1_bit_4_channel_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="mux_1_bit_4_channel_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="mux_1_bit_4_channel_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="mux_1_bit_4_channel_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="mux_1_bit_4_channel_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="mux_1_bit_4_channel_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="mux_1_bit_4_channel_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="mux_1_bit_4_channel.npi"/>
+  <File Type="RBD_FILE" Name="mux_1_bit_4_channel.rbd"/>
+  <File Type="MMI-FILE" Name="mux_1_bit_4_channel.mmi"/>
+  <File Type="BIF-FILE" Name="mux_1_bit_4_channel.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="mux_1_bit_4_channel_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="mux_1_bit_4_channel_pld.bif"/>
+  <File Type="LTX-FILE" Name="mux_1_bit_4_channel.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="mux_1_bit_4_channel_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="mux_1_bit_4_channel_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mux_1_bit_4_channel.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="mux_1_bit_4_channel.sysdef"/>
+  <File Type="BG-BGN" Name="mux_1_bit_4_channel.bgn"/>
+  <File Type="BG-DRC" Name="mux_1_bit_4_channel.drc"/>
+  <File Type="RDI-RDI" Name="mux_1_bit_4_channel.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="mux_1_bit_4_channel_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="mux_1_bit_4_channel_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/1-bit-4-channel-mux.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mux_1_bit_4_channel"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Basys_3_master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/mux_1_bit_4_channel.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

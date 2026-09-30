@@ -1,0 +1,7 @@
+Running: xsim.dir/practice_1_temperatures_behav/xsimk.exe -simmode gui -wdb practice_1_temperatures_behav.wdb -simrunnum 0 -socket 52822
+Design successfully loaded
+Design Loading Memory Usage: 8496 KB (Peak: 8496 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 9312 KB (Peak: 9312 KB)
+Simulation CPU Usage: 171 ms

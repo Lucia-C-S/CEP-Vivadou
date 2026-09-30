@@ -1,0 +1,7 @@
+Running: xsim.dir/testbench_counter_8_bits_lesson_0_time_impl/xsimk.exe -simmode gui -wdb testbench_counter_8_bits_lesson_0_time_impl.wdb -simrunnum 0 -socket 60903
+Design successfully loaded
+Design Loading Memory Usage: 11080 KB (Peak: 11080 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 12096 KB (Peak: 12096 KB)
+Simulation CPU Usage: 109 ms

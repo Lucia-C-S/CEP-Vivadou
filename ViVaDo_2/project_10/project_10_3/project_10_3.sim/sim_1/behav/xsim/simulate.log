@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: End of simulation
+Time: 19 us  Iteration: 0  Process: /tb/line__54  File: C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_10/project_10_3/project_10_3.srcs/sim_1/new/tb.vhd
+$finish called at time : 19 us : File "C:/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/UVIGO/2/1er cuatri/EDIX/ViVaDo/project_10/project_10_3/project_10_3.srcs/sim_1/new/tb.vhd" Line 68
