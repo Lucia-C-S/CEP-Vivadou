@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1790756153" LaunchIncrCheckpoint="$PPRDIR/../phase_1/Project_1_CEP/Project_1_CEP.srcs/utils_1/imports/synth_1/top_board_VGA_interface_phase_1.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1790756472" LaunchIncrCheckpoint="$PPRDIR/../phase_1/Project_1_CEP/Project_1_CEP.srcs/utils_1/imports/synth_1/top_board_VGA_interface_phase_1.dcp">
   <File Type="PA-TCL" Name="top_board_VGA_interface_phase_1.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_board_VGA_interface_phase_1_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_board_VGA_interface_phase_1_reports.tcl"/>
