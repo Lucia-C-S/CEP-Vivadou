@@ -40,3 +40,4 @@ begin
             pixel_colour <= pixel_colour_internal;
         end if;
     end process;
+    end Behavioral;

@@ -2,18 +2,20 @@
 vhdl xil_defaultlib  \
 "../../../../VHDL_Files/CE_generator_25MHz.vhd" \
 "../../../../VHDL_Files/CE_generator_50Hz.vhd" \
+"../../../../phase_2.srcs/sources_1/new/FMS_VGA.vhd" \
 "../../../../new/RGB_generator_Nexys_4_DDR.vhd" \
-"../../../../Project_1_CEP.srcs/sources_1/new/VGA_interface.vhd" \
+"../../../../../phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/VGA_interface.vhd" \
 "../../../../new/blank_generator.vhd" \
+"../../../../phase_2.srcs/sources_1/new/colour_generator.vhd" \
 "../../../../new/edge_detector.vhd" \
-"../../../../Project_1_CEP.srcs/sources_1/new/horizontal_ctr.vhd" \
+"../../../../../phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/horizontal_ctr.vhd" \
 "../../../../new/hsync_generator.vhd" \
-"../../../../Project_1_CEP.srcs/sources_1/new/mux_10b_counter.vhd" \
-"../../../../Project_1_CEP.srcs/sources_1/new/mux_1b_ce.vhd" \
-"../../../../Project_1_CEP.srcs/sources_1/new/top_board_VGA_interface_phase_1.vhd" \
-"../../../../Project_1_CEP.srcs/sources_1/new/vertical_ctr.vhd" \
+"../../../../../phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/mux_10b_counter.vhd" \
+"../../../../../phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/mux_1b_ce.vhd" \
+"../../../../../phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/top_board_VGA_interface_phase_1.vhd" \
+"../../../../../phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/vertical_ctr.vhd" \
 "../../../../new/vsync_generator.vhd" \
-"../../../../Project_1_CEP.srcs/sources_1/new/tb.vhd" \
+"../../../../../phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/tb.vhd" \
 
 # Do not sort compile order
 nosort

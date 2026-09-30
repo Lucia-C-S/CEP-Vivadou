@@ -72,7 +72,8 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 8
-set_param synth.incrementalSynthesisCache C:/Users/lucia/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5316-LU/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/lucia/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3584-LU/incrSyn
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -91,16 +92,14 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   C:/vivadou_CEP/phase_2/VHDL_Files/CE_generator_25MHz.vhd
-  C:/vivadou_CEP/phase_2/VHDL_Files/CE_generator_50Hz.vhd
   C:/vivadou_CEP/phase_2/phase_2.srcs/sources_1/new/FMS_VGA.vhd
   C:/vivadou_CEP/phase_2/new/RGB_generator_Nexys_4_DDR.vhd
   C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/VGA_interface.vhd
   C:/vivadou_CEP/phase_2/new/blank_generator.vhd
+  C:/vivadou_CEP/phase_2/phase_2.srcs/sources_1/new/colour_generator.vhd
   C:/vivadou_CEP/phase_2/new/edge_detector.vhd
   C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/horizontal_ctr.vhd
   C:/vivadou_CEP/phase_2/new/hsync_generator.vhd
-  C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/mux_10b_counter.vhd
-  C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/mux_1b_ce.vhd
   C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/vertical_ctr.vhd
   C:/vivadou_CEP/phase_2/new/vsync_generator.vhd
   C:/vivadou_CEP/phase_1/Project_1_CEP/Project_1_CEP.srcs/sources_1/new/top_board_VGA_interface_phase_1.vhd
