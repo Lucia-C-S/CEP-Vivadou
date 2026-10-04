@@ -3,12 +3,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 
-entity top_board_VGA_interface_phase_1 is
+entity top_board_VGA_interface_objects is
     Port ( clk : in STD_LOGIC;
            CPU_RESETN : in STD_LOGIC;
            --SW15 : in STD_LOGIC; PHASE 2
            --SW14 : in STD_LOGIC;
-           SW : in STD_LOGIC_VECTOR (3 downto 0); -- SW(3:0) PIXEL COLOUR -- phase 2 update
+           SW : in STD_LOGIC_VECTOR (9 downto 0); -- SW(3:0) PIXEL COLOUR -- phase 2 update
           -- LED : out STD_LOGIC_VECTOR (9 downto 0); --LED(9 downto 0) = CONTROL STATE
            vsync_led : out STD_LOGIC; --LED 15)
            vsync_os : out STD_LOGIC;--JB(1)
@@ -18,9 +18,9 @@ entity top_board_VGA_interface_phase_1 is
            VGA_R : out STD_LOGIC_VECTOR (3 downto 0);
            VGA_G : out STD_LOGIC_VECTOR (3 downto 0);
            VGA_B : out STD_LOGIC_VECTOR (3 downto 0));
-end top_board_VGA_interface_phase_1;
+end top_board_VGA_interface_objects;
 
-architecture Behavioral of top_board_VGA_interface_phase_1 is
+architecture Behavioral of top_board_VGA_interface_objects is
 
 component CE_generator_25MHz
    port (
@@ -45,35 +45,56 @@ component vga_interface
 
         R            : out STD_LOGIC_VECTOR(3 downto 0);
         G            : out STD_LOGIC_VECTOR(3 downto 0);
-        B            : out STD_LOGIC_VECTOR(3 downto 0)
+        B            : out STD_LOGIC_VECTOR(3 downto 0);
+        
+        blank: out std_logic
+    
     );
 end component;
 
 -- PHASE 2 
-component FMS_VGA
+--component FMS_VGA
+--   port (
+--      clk           :  in  std_logic;
+--      reset         :  in  std_logic;
+--      sw1           :  in  std_logic;
+--      sw2           :  in  std_logic;
+--      sw3           :  in  std_logic;
+--      colour_scheme :  out  std_logic_vector(2 downto 0)
+--   );
+--   end component;
+   
+--   component colour_generator
+--    Port (
+--        clk           : in  STD_LOGIC;
+--        reset         : in  STD_LOGIC;
+--        black_on      : in  STD_LOGIC;
+--        colour_scheme : in  STD_LOGIC_VECTOR(2 downto 0);
+--        hctr          : in  STD_LOGIC_VECTOR(9 downto 0);
+--        vctr          : in  STD_LOGIC_VECTOR(9 downto 0);
+--        pixel_colour  : out STD_LOGIC_VECTOR(11 downto 0)
+--    );
+--    end component;
+   
+   -------------- PHASE 3
+   component objects_generator
    port (
-      clk           :  in  std_logic;
-      reset         :  in  std_logic;
-      sw1           :  in  std_logic;
-      sw2           :  in  std_logic;
-      sw3           :  in  std_logic;
-      colour_scheme :  out  std_logic_vector(2 downto 0)
+      blank              :  in  std_logic;    
+      clk                :  in  std_logic;    
+      fe_vsync           :  in  std_logic;    
+      re_vsync           :  in  std_logic;    
+      reset              :  in  std_logic;    
+      hctr               :  in  std_logic_vector(9 downto 0);
+      object_1_hposition :  in  std_logic_vector(9 downto 0);
+      object_1_vposition :  in  std_logic_vector(9 downto 0);
+      object_2_hposition :  in  std_logic_vector(9 downto 0);
+      object_2_vposition :  in  std_logic_vector(9 downto 0);
+      object_3_hposition :  in  std_logic_vector(9 downto 0);
+      object_3_vposition :  in  std_logic_vector(9 downto 0);
+      vctr               :  in  std_logic_vector(9 downto 0);
+      pixel_colour       :  out  std_logic_vector(11 downto 0)
    );
    end component;
-   
-   component colour_generator
-    Port (
-        clk           : in  STD_LOGIC;
-        reset         : in  STD_LOGIC;
-        black_on      : in  STD_LOGIC;
-        colour_scheme : in  STD_LOGIC_VECTOR(2 downto 0);
-        hctr          : in  STD_LOGIC_VECTOR(9 downto 0);
-        vctr          : in  STD_LOGIC_VECTOR(9 downto 0);
-        pixel_colour  : out STD_LOGIC_VECTOR(11 downto 0)
-    );
-    end component;
-   
-   --------------
    
     signal reset: std_logic;
     signal ce_25MHz : std_logic;
@@ -84,6 +105,9 @@ component FMS_VGA
     --PHASE 2
     signal colour_scheme : std_logic_vector(2 downto 0);
     signal pixel_colour_int : std_logic_vector(11 downto 0);
+    --PHASE 3
+    signal blank_int: std_logic;
+
 begin
     reset <= not CPU_RESETN;
     
@@ -100,13 +124,16 @@ begin
         clk          => clk,
         reset        => reset,
         ce_25MHz     => ce_25MHz,
+
         pixel_colour => pixel_colour_int,
 
         hctr         => hctr_int,
         vctr         => vctr_int,
 
-        hsync        => hsync_os,
-        vsync        => vsync_os,
+        blank        => blank_int,
+
+        hsync        => VGA_hsync,
+        vsync        => VGA_vsync,
 
         R            => VGA_R,
         G            => VGA_G,
@@ -122,25 +149,50 @@ vsync_led <= vsync_int;
   
   --PHASE 2
   
-FMS_VGA_inst: FMS_VGA
-   port map (
-      clk                       => clk,                     
-      reset                     => reset,                   
-      sw1                       => SW(1),                     
-      sw2                       => SW(2),                     
-      sw3                       => SW(3),                     
-      colour_scheme => colour_scheme
-   );
+--FMS_VGA_inst: FMS_VGA
+--   port map (
+--      clk                       => clk,                     
+--      reset                     => reset,                   
+--      sw1                       => SW(1),                     
+--      sw2                       => SW(2),                     
+--      sw3                       => SW(3),                     
+--      colour_scheme => colour_scheme
+--   );
    
-colour_scheme_inst: colour_generator
+--colour_scheme_inst: colour_generator
+--    port map (
+--        clk           => clk,
+--        reset         => reset,
+--        black_on      => SW(0),
+--        colour_scheme => colour_scheme,
+--        hctr          => hctr_int,
+--        vctr          => vctr_int,
+--        pixel_colour  => pixel_colour_int
+--    );
+-- PHASE 3
+objects_generator_inst : objects_generator
     port map (
-        clk           => clk,
-        reset         => reset,
-        black_on      => SW(0),
-        colour_scheme => colour_scheme,
-        hctr          => hctr_int,
-        vctr          => vctr_int,
-        pixel_colour  => pixel_colour_int
+        clk => clk,
+        reset => reset,
+
+        hctr => hctr_int,
+        vctr => vctr_int,
+        
+        fe_vsync => '0',
+        re_vsync => '0',
+        blank => blank_int,
+
+        object_1_hposition => SW(9 downto 0), --controlled by ten switches
+        object_1_vposition => "0111110100",--500 = bottom of frame
+
+        object_2_hposition => "0011001000",--200 --initial values for the ball
+        object_2_vposition => "0011111010",--250
+
+        object_3_hposition => (others => '0'), --undefined
+        object_3_vposition => (others => '0'),
+
+        pixel_colour => pixel_colour_int
     );
+
 
 end Behavioral;

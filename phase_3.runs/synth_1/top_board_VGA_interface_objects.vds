@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Oct  4 12:13:54 2026
+# Process ID: 27108
+# Current directory: C:/vivadou_CEP/phase_3/phase_3.runs/synth_1
+# Command line: vivado.exe -log top_board_VGA_interface_objects.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_board_VGA_interface_objects.tcl
+# Log file: C:/vivadou_CEP/phase_3/phase_3.runs/synth_1/top_board_VGA_interface_objects.vds
+# Journal file: C:/vivadou_CEP/phase_3/phase_3.runs/synth_1\vivado.jou
+# Running On: LU, OS: Windows, CPU Frequency: 2395 MHz, CPU Physical cores: 32, Host memory: 67838 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/lucia/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source top_board_VGA_interface_objects.tcl -notrace
+Command: synth_design -top top_board_VGA_interface_objects -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13228
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1336.578 ; gain = 438.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_board_VGA_interface_objects' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/top_VGA_interface_objects.vhd:23]
+INFO: [Synth 8-3491] module 'CE_generator_25MHz' declared at 'C:/vivadou_CEP/phase_3/VHDL_Files/CE_generator_25MHz.vhd:11' bound to instance 'CE_generator_25MHz_inst' of component 'CE_generator_25MHz' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/top_VGA_interface_objects.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'CE_generator_25MHz' [C:/vivadou_CEP/phase_3/VHDL_Files/CE_generator_25MHz.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'CE_generator_25MHz' (0#1) [C:/vivadou_CEP/phase_3/VHDL_Files/CE_generator_25MHz.vhd:17]
+INFO: [Synth 8-3491] module 'vga_interface' declared at 'C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:5' bound to instance 'VGA' of component 'vga_interface' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/top_VGA_interface_objects.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'vga_interface' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:27]
+INFO: [Synth 8-3491] module 'horizontal_ctr' declared at 'C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/horizontal_ctr.vhd:5' bound to instance 'HORIZONTAL_COUNTER_INST' of component 'horizontal_ctr' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'horizontal_ctr' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/horizontal_ctr.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'horizontal_ctr' (0#1) [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/horizontal_ctr.vhd:12]
+INFO: [Synth 8-3491] module 'hsync_generator' declared at 'C:/vivadou_CEP/phase_3/new/hsync_generator.vhd:5' bound to instance 'HSYNC_GENERATOR_INST' of component 'hsync_generator' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'hsync_generator' [C:/vivadou_CEP/phase_3/new/hsync_generator.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'hsync_generator' (0#1) [C:/vivadou_CEP/phase_3/new/hsync_generator.vhd:15]
+INFO: [Synth 8-3491] module 'edge_detector' declared at 'C:/vivadou_CEP/phase_3/new/edge_detector.vhd:4' bound to instance 'EDGE_DETECTOR_INST' of component 'edge_detector' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/vivadou_CEP/phase_3/new/edge_detector.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (0#1) [C:/vivadou_CEP/phase_3/new/edge_detector.vhd:15]
+INFO: [Synth 8-3491] module 'vertical_ctr' declared at 'C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/vertical_ctr.vhd:5' bound to instance 'VERTICAL_COUNTER_INST' of component 'vertical_ctr' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'vertical_ctr' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/vertical_ctr.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'vertical_ctr' (0#1) [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/vertical_ctr.vhd:14]
+INFO: [Synth 8-3491] module 'vsync_generator' declared at 'C:/vivadou_CEP/phase_3/new/vsync_generator.vhd:5' bound to instance 'VSYNC_GENERATOR_INST' of component 'vsync_generator' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'vsync_generator' [C:/vivadou_CEP/phase_3/new/vsync_generator.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'vsync_generator' (0#1) [C:/vivadou_CEP/phase_3/new/vsync_generator.vhd:15]
+INFO: [Synth 8-3491] module 'blank_generator' declared at 'C:/vivadou_CEP/phase_3/new/blank_generator.vhd:5' bound to instance 'BLANK_GENERATOR_INST' of component 'blank_generator' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'blank_generator' [C:/vivadou_CEP/phase_3/new/blank_generator.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'blank_generator' (0#1) [C:/vivadou_CEP/phase_3/new/blank_generator.vhd:13]
+INFO: [Synth 8-3491] module 'RGB_generator_Nexys_4_DDR' declared at 'C:/vivadou_CEP/phase_3/new/RGB_generator_Nexys_4_DDR.vhd:5' bound to instance 'RGB_GENERATOR_INST' of component 'RGB_generator_Nexys_4_DDR' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'RGB_generator_Nexys_4_DDR' [C:/vivadou_CEP/phase_3/new/RGB_generator_Nexys_4_DDR.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'RGB_generator_Nexys_4_DDR' (0#1) [C:/vivadou_CEP/phase_3/new/RGB_generator_Nexys_4_DDR.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'vga_interface' (0#1) [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd:27]
+INFO: [Synth 8-3491] module 'objects_generator' declared at 'C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_generator.vhd:4' bound to instance 'objects_generator_inst' of component 'objects_generator' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/top_VGA_interface_objects.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'objects_generator' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_generator.vhd:17]
+INFO: [Synth 8-3491] module 'object_1' declared at 'C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_1.vhd:6' bound to instance 'object_1_inst' of component 'object_1' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_generator.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'object_1' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_1.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'object_1' (0#1) [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_1.vhd:19]
+INFO: [Synth 8-3491] module 'object_2' declared at 'C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_2.vhd:5' bound to instance 'object_2_inst' of component 'object_2' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_generator.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'object_2' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_2.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'object_2' (0#1) [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_2.vhd:18]
+INFO: [Synth 8-3491] module 'colour_multiplexer' declared at 'C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/colour_multiplexer.vhd:4' bound to instance 'mux_inst' of component 'colour_multiplexer' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_generator.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'colour_multiplexer' [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/colour_multiplexer.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'colour_multiplexer' (0#1) [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/colour_multiplexer.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'objects_generator' (0#1) [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/object_generator.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'top_board_VGA_interface_objects' (0#1) [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/top_VGA_interface_objects.vhd:23]
+WARNING: [Synth 8-3848] Net vsync_int in module/entity top_board_VGA_interface_objects does not have driver. [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/top_VGA_interface_objects.vhd:104]
+WARNING: [Synth 8-3848] Net hsync_int in module/entity top_board_VGA_interface_objects does not have driver. [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/top_VGA_interface_objects.vhd:103]
+WARNING: [Synth 8-7129] Port clk in module colour_multiplexer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module colour_multiplexer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[9] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[8] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[7] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[6] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[5] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[4] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[3] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[2] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[1] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_hposition[0] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[9] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[8] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[7] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[6] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[5] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[4] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[3] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[2] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[1] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_2_vposition[0] in module object_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[9] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[8] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[7] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[6] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[5] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[4] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[3] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[2] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[1] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_1_vposition[0] in module object_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port re_vsync in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fe_vsync in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[9] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[8] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[7] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[6] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[5] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[4] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[3] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[2] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[1] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_hposition[0] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[9] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[8] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[7] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[6] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[5] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[4] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[3] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[2] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[1] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port object_3_vposition[0] in module objects_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module CE_generator_25MHz is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1443.973 ; gain = 546.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1443.973 ; gain = 546.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1443.973 ; gain = 546.293
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1443.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/vivadou_CEP/phase_3/Constraints/Config_Voltage_Nexys_4_DDR.xdc]
+Finished Parsing XDC File [C:/vivadou_CEP/phase_3/Constraints/Config_Voltage_Nexys_4_DDR.xdc]
+Parsing XDC File [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW14'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW15'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/vivadou_CEP/phase_3/Constraints/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_board_VGA_interface_objects_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_board_VGA_interface_objects_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/vivadou_CEP/phase_3/Constraints/Timing_Constraints_Nexys_4_DDR.xdc]
+Finished Parsing XDC File [C:/vivadou_CEP/phase_3/Constraints/Timing_Constraints_Nexys_4_DDR.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1523.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1523.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |    10|
+|4     |LUT3 |     2|
+|5     |LUT4 |     3|
+|6     |LUT5 |    10|
+|7     |LUT6 |    10|
+|8     |FDRE |    25|
+|9     |FDSE |     2|
+|10    |IBUF |     2|
+|11    |OBUF |    17|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1523.027 ; gain = 625.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1523.027 ; gain = 546.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1523.027 ; gain = 625.348
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1523.027 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1523.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 920f4ae7
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 73 Warnings, 14 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1523.027 ; gain = 1036.516
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1523.027 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/vivadou_CEP/phase_3/phase_3.runs/synth_1/top_board_VGA_interface_objects.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_board_VGA_interface_objects_utilization_synth.rpt -pb top_board_VGA_interface_objects_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 12:14:27 2026...

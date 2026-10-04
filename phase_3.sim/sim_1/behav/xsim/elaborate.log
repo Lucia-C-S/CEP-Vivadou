@@ -1,10 +1,9 @@
 Vivado Simulator v2023.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Programas/Vivadou/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_board_VGA_interface_phase_1_behav xil_defaultlib.top_board_VGA_interface_phase_1 -log elaborate.log 
+Running: C:/Programas/Vivadou/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_VGA_interface_objects_behav xil_defaultlib.tb_top_VGA_interface_objects -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-4940] 'fms_vga' remains a black box since it has no binding entity [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/top_VGA_interface_objects.vhd:125]
-WARNING: [VRFC 10-4940] 'colour_generator' remains a black box since it has no binding entity [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/top_VGA_interface_objects.vhd:135]
+WARNING: [VRFC 10-4940] 'top_vga_interface_objects' remains a black box since it has no binding entity [C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/tb_vga.vhd:67]
 Completed static elaboration
 INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

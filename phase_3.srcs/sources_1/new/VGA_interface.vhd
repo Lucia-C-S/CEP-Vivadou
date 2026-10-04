@@ -17,7 +17,9 @@ entity vga_interface is
 
         R            : out STD_LOGIC_VECTOR(3 downto 0);
         G            : out STD_LOGIC_VECTOR(3 downto 0);
-        B            : out STD_LOGIC_VECTOR(3 downto 0)
+        B            : out STD_LOGIC_VECTOR(3 downto 0);
+        
+        blank: out STD_LOGIC  
     );
 end vga_interface;
 
@@ -241,5 +243,6 @@ begin
 
     hsync <= hsync_int;
     vsync <= vsync_int;
+    blank <= blank_int;
     
  end  Structural;

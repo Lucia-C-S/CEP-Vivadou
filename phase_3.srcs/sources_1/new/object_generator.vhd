@@ -7,7 +7,7 @@ entity objects_generator is
         reset        : in  STD_LOGIC;
         hctr         : in  STD_LOGIC_VECTOR(9 downto 0);
         vctr         : in  STD_LOGIC_VECTOR(9 downto 0);
-        re_vsyc, fe_vsync        : in  STD_LOGIC := '0';
+        re_vsync, fe_vsync        : in  STD_LOGIC := '0';
         blank: in std_logic;
         object_1_hposition, object_1_vposition, object_2_hposition, object_2_vposition, object_3_hposition, object_3_vposition     : in  STD_LOGIC_VECTOR(9 downto 0);
         pixel_colour : out STD_LOGIC_VECTOR(11 downto 0)
@@ -66,12 +66,10 @@ architecture Behavioral of objects_generator is
 
     signal object_1_on  : STD_LOGIC;
     signal object_2_on  : STD_LOGIC;
-    signal object_3_on  : STD_LOGIC;
 
 
     signal object_1_colour : STD_LOGIC_VECTOR(11 downto 0);
     signal object_2_colour : STD_LOGIC_VECTOR(11 downto 0);
-    signal object_3_colour : STD_LOGIC_VECTOR(11 downto 0);
 
     signal video_on: std_logic ;
 
@@ -94,12 +92,14 @@ begin
     object_2_inst : object_2
         port map (
       hctr(9 downto 0)               => hctr(9 downto 0),             
-      object_2_hposition(9 downto 0) => object_1_hposition(9 downto 0),
-      object_2_vposition(9 downto 0) => object_1_vposition(9 downto 0),
+      object_2_hposition(9 downto 0) => object_2_hposition(9 downto 0),
+      object_2_vposition(9 downto 0) => object_2_vposition(9 downto 0),
       vctr(9 downto 0)               => vctr(9 downto 0),             
-      object_2_on                    => object_1_on,                  
-      object_2_colour(11 downto 0)   => object_1_colour(11 downto 0)
+      object_2_on                    => object_2_on,                  
+      object_2_colour(11 downto 0)   => object_2_colour(11 downto 0)
         );
+        
+      
 
     mux_inst : colour_multiplexer
         port map (
@@ -108,11 +108,11 @@ begin
       blank                          => blank,             
       object_1_colour  => object_1_colour,
       object_1_on => object_1_on,
-      object_2_colour  => object_1_colour,
-      object_2_on => object_1_on,
+      object_2_colour  => object_2_colour,
+      object_2_on => object_2_on,
       
-      object_3_colour  => object_1_colour,
-      object_3_on => object_1_on,
+      object_3_colour  => (others => '0'),
+      object_3_on => '0',
       pixel_colour => pixel_colour
    );
 
