@@ -71,7 +71,8 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/lucia/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10424-LU/incrSyn
+set_param chipscope.maxJobs 8
+set_param synth.incrementalSynthesisCache C:/Users/lucia/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-29036-LU/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -92,6 +93,11 @@ read_vhdl -library xil_defaultlib {
   C:/vivadou_CEP/phase_3/VHDL_Files/CE_generator_25MHz.vhd
   C:/vivadou_CEP/phase_3/new/RGB_generator_Nexys_4_DDR.vhd
   C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/VGA_interface.vhd
+  C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/register_10_bits_hposition_object_2_aux.vhd
+  C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/register_10_bits_vposition_object_2_aux.vhd
+  C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/register_10_bits_hposition_object_2.vhd
+  C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/register_10_bits_vposition_object_2.vhd
+  C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/ball_movement.vhd
   C:/vivadou_CEP/phase_3/new/blank_generator.vhd
   C:/vivadou_CEP/phase_3/phase_3.srcs/sources_1/new/colour_multiplexer.vhd
   C:/vivadou_CEP/phase_3/new/edge_detector.vhd
@@ -123,6 +129,8 @@ read_xdc C:/vivadou_CEP/phase_3/Constraints/Timing_Constraints_Nexys_4_DDR.xdc
 set_property used_in_implementation false [get_files C:/vivadou_CEP/phase_3/Constraints/Timing_Constraints_Nexys_4_DDR.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/vivadou_CEP/phase_3/phase_3.srcs/utils_1/imports/synth_1/top_board_VGA_interface_objects.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

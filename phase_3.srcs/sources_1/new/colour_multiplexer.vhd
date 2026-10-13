@@ -32,7 +32,7 @@ begin
     begin
 
         -- Blank intervals
-        if blank = '1' then
+        if blank = '0' then
 
             pixel_colour <= x"000";-- blac
 

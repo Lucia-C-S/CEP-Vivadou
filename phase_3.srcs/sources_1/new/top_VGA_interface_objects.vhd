@@ -96,6 +96,28 @@ end component;
    );
    end component;
    
+   component edge_detector
+    Port (
+        input              : in  STD_LOGIC;
+        clk                : in  STD_LOGIC;
+        reset              : in  STD_LOGIC;
+        input_rising_edge  : out STD_LOGIC;
+        input_falling_edge : out STD_LOGIC;
+        input_sync         : out STD_LOGIC
+    );
+end component;
+
+component ball_movement
+    Port (
+        clk       : in  STD_LOGIC;
+        reset     : in  STD_LOGIC;
+        re_vsync  : in  STD_LOGIC;
+        fe_vsync  : in  STD_LOGIC;
+        hposition : out STD_LOGIC_VECTOR(9 downto 0);
+        vposition : out STD_LOGIC_VECTOR(9 downto 0)
+    );
+end component;
+   
     signal reset: std_logic;
     signal ce_25MHz : std_logic;
     signal hctr_int : std_logic_vector(9 downto 0);
@@ -107,6 +129,14 @@ end component;
     signal pixel_colour_int : std_logic_vector(11 downto 0);
     --PHASE 3
     signal blank_int: std_logic;
+
+    signal re_vsync_int : STD_LOGIC;
+signal fe_vsync_int : STD_LOGIC;
+signal vsync_sync    : STD_LOGIC;
+
+signal ball_hposition : STD_LOGIC_VECTOR(9 downto 0);
+signal ball_vposition : STD_LOGIC_VECTOR(9 downto 0);
+
 
 begin
     reset <= not CPU_RESETN;
@@ -132,8 +162,8 @@ begin
 
         blank        => blank_int,
 
-        hsync        => VGA_hsync,
-        vsync        => VGA_vsync,
+        hsync        => hsync_int,
+        vsync        => vsync_int,
 
         R            => VGA_R,
         G            => VGA_G,
@@ -177,22 +207,44 @@ objects_generator_inst : objects_generator
 
         hctr => hctr_int,
         vctr => vctr_int,
-        
-        fe_vsync => '0',
-        re_vsync => '0',
+
+        fe_vsync => fe_vsync_int,
+        re_vsync => re_vsync_int,
         blank => blank_int,
 
-        object_1_hposition => SW(9 downto 0), --controlled by ten switches
-        object_1_vposition => "0111110100",--500 = bottom of frame
+        -- Object 1: wall
+        object_1_hposition => SW(9 downto 0),
+        object_1_vposition => "0111110100",
 
-        object_2_hposition => "0011001000",--200 --initial values for the ball
-        object_2_vposition => "0011111010",--250
+        -- Object 2: moving ball
+        object_2_hposition => ball_hposition,
+        object_2_vposition => ball_vposition,
 
-        object_3_hposition => (others => '0'), --undefined
+        -- Object 3: unused
+        object_3_hposition => (others => '0'),
         object_3_vposition => (others => '0'),
 
         pixel_colour => pixel_colour_int
     );
 
+VSYNC_EDGE_DETECTOR_INST : edge_detector
+    port map (
+        input              => vsync_int,
+        clk                => clk,
+        reset              => reset,
+        input_rising_edge  => re_vsync_int,
+        input_falling_edge => fe_vsync_int,
+        input_sync         => vsync_sync
+    );
+    
+    BALL_MOVEMENT_INST : ball_movement
+    port map (
+        clk       => clk,
+        reset     => reset,
+        re_vsync  => re_vsync_int,
+        fe_vsync  => fe_vsync_int,
+        hposition => ball_hposition,
+        vposition => ball_vposition
+    );
 
 end Behavioral;
