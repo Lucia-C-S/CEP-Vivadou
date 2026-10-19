@@ -1,0 +1,13 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/vivadou_CEP/phase_1_keyboard/claude_tb/ps2_tb_pkg.vhd,1792384429,vhdl,C:/vivadou_CEP/phase_1_keyboard/claude_tb/tb_ps2_operating_unit.vhd,,,ps2_tb_pkg,,,,,,,,
+C:/vivadou_CEP/phase_1_keyboard/claude_tb/tb_ps2_operating_unit.vhd,1792384429,vhdl,,,,tb_ps2_operating_unit,,,,,,,,
+C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sim_1/new/PS2_operating_unit_tb.vhd,1792346679,vhdl,,,,ps2_operating_unit_tb,,,,,,,,
+C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/PS2_operating_unit.vhd,1792346679,vhdl,C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sim_1/new/PS2_operating_unit_tb.vhd,,,ps2_operating_unit,,,,,,,,
+C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/c_4_arrived_bits.vhd,1792346679,vhdl,C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/PS2_operating_unit.vhd,,,c_4_arrived_bits,,,,,,,,
+C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/kblck_fe_detector.vhd,1792346679,vhdl,C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/PS2_operating_unit.vhd,,,kblck_fe_detector,,,,,,,,
+C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/parity_check.vhd,1792346679,vhdl,C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/PS2_operating_unit.vhd,,,parity_check,,,,,,,,
+C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/pr_8_data_received.vhd,1792346679,vhdl,C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/PS2_operating_unit.vhd,,,pr_8_data_received,,,,,,,,
+C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/sr_11_arriving_bits.vhd,1792346679,vhdl,C:/vivadou_CEP/phase_1_keyboard/phase_1_keyboard.srcs/sources_1/new/PS2_operating_unit.vhd,,,sr_11_arriving_bits,,,,,,,,

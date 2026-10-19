@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../phase_1_keyboard.srcs/sources_1/new/kblck_fe_detector.vhd" \
+"../../../../phase_1_keyboard.srcs/sources_1/new/sr_11_arriving_bits.vhd" \
+"../../../../phase_1_keyboard.srcs/sources_1/new/c_4_arrived_bits.vhd" \
+"../../../../phase_1_keyboard.srcs/sources_1/new/parity_check.vhd" \
+"../../../../phase_1_keyboard.srcs/sources_1/new/pr_8_data_received.vhd" \
+"../../../../phase_1_keyboard.srcs/sources_1/new/PS2_operating_unit.vhd" \
+"../../../../phase_1_keyboard.srcs/sim_1/new/PS2_operating_unit_tb.vhd" \
+
+# Do not sort compile order
+nosort
