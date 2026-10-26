@@ -1,0 +1,7 @@
+Running: xsim.dir/PS2_operating_unit_tb_behav/xsimk.exe -simmode gui -wdb PS2_operating_unit_tb_behav.wdb -simrunnum 0 -socket 63750
+Design successfully loaded
+Design Loading Memory Usage: 9524 KB (Peak: 9524 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 18168 KB (Peak: 18168 KB)
+Simulation CPU Usage: 4046 ms

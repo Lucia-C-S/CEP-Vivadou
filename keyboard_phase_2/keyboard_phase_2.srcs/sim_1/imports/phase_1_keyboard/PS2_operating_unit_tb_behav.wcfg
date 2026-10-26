@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_PS2_advanced_interface_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_PS2_advanced_interface" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.066447397 ms"></ZoomStartTime>
+      <ZoomEndTime time="4.917107420 ms"></ZoomEndTime>
+      <Cursor1Time time="0.720245000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="250"></NameColumnWidth>
+      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_PS2_advanced_interface/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/data" type="array">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/end_key" type="logic">
+      <obj_property name="ElementShortName">end_key</obj_property>
+      <obj_property name="ObjectShortName">end_key</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/kbclk" type="logic">
+      <obj_property name="ElementShortName">kbclk</obj_property>
+      <obj_property name="ObjectShortName">kbclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/kbdata" type="logic">
+      <obj_property name="ElementShortName">kbdata</obj_property>
+      <obj_property name="ObjectShortName">kbdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/key" type="array">
+      <obj_property name="ElementShortName">key[7:0]</obj_property>
+      <obj_property name="ObjectShortName">key[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/new_data" type="logic">
+      <obj_property name="ElementShortName">new_data</obj_property>
+      <obj_property name="ObjectShortName">new_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/new_key" type="logic">
+      <obj_property name="ElementShortName">new_key</obj_property>
+      <obj_property name="ObjectShortName">new_key</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/parity_error" type="logic">
+      <obj_property name="ElementShortName">parity_error</obj_property>
+      <obj_property name="ObjectShortName">parity_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PS2_advanced_interface/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+</wave_config>

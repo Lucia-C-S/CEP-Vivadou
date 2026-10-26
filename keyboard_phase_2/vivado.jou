@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Oct 18 11:59:29 2026
+# Process ID: 4300
+# Current directory: C:/Users/vieit/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23916
+# Log file: C:/Users/vieit/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/vieit/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On: LAPTOP-8L8GBJC0, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 16824 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Universidad/CEP/Laboratories/Lab_Lesson2/phase_1_keyboard/phase_1_keyboard.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source PS2_operating_unit_tb.tcl
+restart
+run 5 ms
+close_sim
+launch_simulation
+source PS2_operating_unit_tb.tcl
+restart
+run 5 ms
+close_sim
+launch_simulation
+source PS2_operating_unit_tb.tcl
+restart
+run 5 ms
+save_wave_config {C:/Universidad/CEP/Laboratories/Lab_Lesson2/phase_1_keyboard/PS2_operating_unit_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Universidad/CEP/Laboratories/Lab_Lesson2/phase_1_keyboard/PS2_operating_unit_tb_behav.wcfg
+set_property xsim.view C:/Universidad/CEP/Laboratories/Lab_Lesson2/phase_1_keyboard/PS2_operating_unit_tb_behav.wcfg [get_filesets sim_1]
+archive_project C:/Universidad/CEP/Laboratories/Lab_Lesson2/phase_1_keyboard.xpr.zip -temp_dir C:/Users/vieit/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4300-LAPTOP-8L8GBJC0 -force -include_local_ip_cache
