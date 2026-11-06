@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+Note: PASS: ASCII top-level test completed; LED=4142
+Time: 11910205 ns  Iteration: 0  Process: /tb_top_display_PS2_ascii_interface/stimulus  File: C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sim_1/new/tb_top_display_PS2_ascii_interface.vhd

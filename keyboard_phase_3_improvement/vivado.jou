@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Nov  1 10:34:37 2026
+# Process ID: 21780
+# Current directory: C:/Users/vieit/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24248
+# Log file: C:/Users/vieit/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/vieit/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On: LAPTOP-8L8GBJC0, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 16824 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Universidad/CEP/Laboratories/Lab_Lesson2/keyboard_phase_3/keyboard_phase_3.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Universidad/CEP/Laboratories/Lab_Lesson2/keyboard_phase_3/keyboard_phase_3.srcs/sim_1/imports/phase_1_keyboard/PS2_operating_unit_tb_behav.wcfg
+source tb_ps2_set2_to_ascii.tcl
+restart
+run 1 ms
+current_wave_config {PS2_operating_unit_tb_behav.wcfg}
+add_wave {{/tb_ps2_set2_to_ascii/clk}} {{/tb_ps2_set2_to_ascii/reset}} {{/tb_ps2_set2_to_ascii/scan_valid}} {{/tb_ps2_set2_to_ascii/ascii_valid}} {{/tb_ps2_set2_to_ascii/scan_code}} {{/tb_ps2_set2_to_ascii/ascii_code}} {{/tb_ps2_set2_to_ascii/CLK_PERIOD}} 
+restart
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+restart
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+run 1 ns
+restart
+run 500 ns
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Universidad/CEP/Laboratories/Lab_Lesson2/keyboard_phase_3/keyboard_phase_3.srcs/sim_1/new/tb_top_display_PS2_ascii_interface.vhd w ]
+add_files -fileset sim_1 C:/Universidad/CEP/Laboratories/Lab_Lesson2/keyboard_phase_3/keyboard_phase_3.srcs/sim_1/new/tb_top_display_PS2_ascii_interface.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_top_display_PS2_ascii_interface [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+open_wave_config C:/Universidad/CEP/Laboratories/Lab_Lesson2/keyboard_phase_3/keyboard_phase_3.srcs/sim_1/imports/phase_1_keyboard/PS2_operating_unit_tb_behav.wcfg
+source tb_top_display_PS2_ascii_interface.tcl
+current_wave_config {PS2_operating_unit_tb_behav.wcfg}
+add_wave {{/tb_top_display_PS2_ascii_interface/clk100mhz}} {{/tb_top_display_PS2_ascii_interface/cpu_resetn}} {{/tb_top_display_PS2_ascii_interface/kbclk}} {{/tb_top_display_PS2_ascii_interface/kbdata}} {{/tb_top_display_PS2_ascii_interface/led}} {{/tb_top_display_PS2_ascii_interface/an}} {{/tb_top_display_PS2_ascii_interface/ca}} {{/tb_top_display_PS2_ascii_interface/cb}} {{/tb_top_display_PS2_ascii_interface/cc}} {{/tb_top_display_PS2_ascii_interface/cd}} {{/tb_top_display_PS2_ascii_interface/ce}} {{/tb_top_display_PS2_ascii_interface/cf}} {{/tb_top_display_PS2_ascii_interface/cg}} {{/tb_top_display_PS2_ascii_interface/dp}} 
+restart
+run 500 ns
+run 500 ns
+run 500 ns
+restart
+run 5 ns
+restart
+run 5 ms
+run 5 ms
+run 5 ms
+current_wave_config {PS2_operating_unit_tb_behav.wcfg}
+add_wave {{/tb_top_display_PS2_ascii_interface/DUT/REG5}} 
+current_wave_config {PS2_operating_unit_tb_behav.wcfg}
+add_wave {{/tb_top_display_PS2_ascii_interface/DUT/REG5}} 
+current_wave_config {PS2_operating_unit_tb_behav.wcfg}
+add_wave {{/tb_top_display_PS2_ascii_interface/DUT/REG1}} 
+current_wave_config {PS2_operating_unit_tb_behav.wcfg}
+add_wave {{/tb_top_display_PS2_ascii_interface/DUT/ascii_valid_int}} 
+current_wave_config {PS2_operating_unit_tb_behav.wcfg}
+add_wave {{/tb_top_display_PS2_ascii_interface/DUT/ascii_int}} 
+current_wave_config {PS2_operating_unit_tb_behav.wcfg}
+add_wave {{/tb_top_display_PS2_ascii_interface/DUT/r1}} {{/tb_top_display_PS2_ascii_interface/DUT/r2}} {{/tb_top_display_PS2_ascii_interface/DUT/r3}} {{/tb_top_display_PS2_ascii_interface/DUT/r4}} {{/tb_top_display_PS2_ascii_interface/DUT/r5}} {{/tb_top_display_PS2_ascii_interface/DUT/r6}} 
+restart
+run 15 ms
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+archive_project C:/Universidad/CEP/Laboratories/Lab_Lesson2/keyboard_phase_3_improvement.xpr.zip -temp_dir C:/Users/vieit/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21780-LAPTOP-8L8GBJC0 -force -include_local_ip_cache -include_config_settings

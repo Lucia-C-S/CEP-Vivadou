@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Nov  1 22:32:51 2026
+# Process ID: 7032
+# Current directory: C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.runs/synth_1
+# Command line: vivado.exe -log top_display_PS2_ascii_interface.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_display_PS2_ascii_interface.tcl
+# Log file: C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.runs/synth_1/top_display_PS2_ascii_interface.vds
+# Journal file: C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.runs/synth_1\vivado.jou
+# Running On: LU, OS: Windows, CPU Frequency: 2395 MHz, CPU Physical cores: 32, Host memory: 67838 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/lucia/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source top_display_PS2_ascii_interface.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/utils_1/imports/synth_1/PS2_basic_interface.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/utils_1/imports/synth_1/PS2_basic_interface.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_display_PS2_ascii_interface -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23512
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1340.492 ; gain = 441.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_display_PS2_ascii_interface' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/top_display_PS2_ascii_interface.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'PS2_advanced_interface' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_advanced_interface.vhd:20]
+INFO: [Synth 8-3491] module 'PS2_basic_interface' declared at 'C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_basic_interface.vhd:4' bound to instance 'PS2_basic_interface_inst' of component 'PS2_basic_interface' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_advanced_interface.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'PS2_basic_interface' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_basic_interface.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'PS2_operating_unit' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_operating_unit.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'kblck_fe_detector' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/kblck_fe_detector.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'kblck_fe_detector' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/kblck_fe_detector.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'sr_11_arriving_bits' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/sr_11_arriving_bits.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sr_11_arriving_bits' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/sr_11_arriving_bits.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'c_4_arrived_bits' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/c_4_arrived_bits.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'c_4_arrived_bits' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/c_4_arrived_bits.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'parity_check' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/parity_check.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'parity_check' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/parity_check.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'pr_8_data_received' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/pr_8_data_received.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'pr_8_data_received' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/pr_8_data_received.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'PS2_operating_unit' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_operating_unit.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'PS2_basic_fsm' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_basic_fsm.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'PS2_basic_fsm' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_basic_fsm.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'PS2_basic_interface' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_basic_interface.vhd:16]
+INFO: [Synth 8-3491] module 'comparator_8_bits' declared at 'C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/comparator_8_bits.vhd:16' bound to instance 'comparator_8_bits_inst' of component 'comparator_8_bits' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_advanced_interface.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'comparator_8_bits' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/comparator_8_bits.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'comparator_8_bits' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/comparator_8_bits.vhd:25]
+INFO: [Synth 8-3491] module 'PS2_advanced_fsm' declared at 'C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_FSM_advanced_interface.vhd:4' bound to instance 'PS2_advanced_fsm_inst' of component 'PS2_advanced_fsm' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_advanced_interface.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'PS2_advanced_fsm' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_FSM_advanced_interface.vhd:17]
+INFO: [Synth 8-226] default block is never used [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_FSM_advanced_interface.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'PS2_advanced_fsm' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_FSM_advanced_interface.vhd:17]
+INFO: [Synth 8-3491] module 'register_8_bits' declared at 'C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/register_8_bits.vhd:7' bound to instance 'register_8_bits_inst' of component 'register_8_bits' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_advanced_interface.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'register_8_bits' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/register_8_bits.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'register_8_bits' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/register_8_bits.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'PS2_advanced_interface' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/PS2_advanced_interface.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'ps2_set2_to_ascii' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/ps2_set2_to_ascii.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ps2_set2_to_ascii' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/ps2_set2_to_ascii.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'register_bank_8bit' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/register_bank_8bit.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'register_bank_8bit' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/register_bank_8bit.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'dec_bin_to_7_seg' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/dec_bin_to_7_seg.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'dec_bin_to_7_seg' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/dec_bin_to_7_seg.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'CE_generator_1kHz' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/CE_generator_1kHz.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'CE_generator_1kHz' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/CE_generator_1kHz.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'dynamic_7_segment_display_controller_reg' [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/dynamic_7_segment_display_controller_reg.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'dynamic_7_segment_display_controller_reg' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/dynamic_7_segment_display_controller_reg.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'top_display_PS2_ascii_interface' (0#1) [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/sources_1/new/top_display_PS2_ascii_interface.vhd:17]
+WARNING: [Synth 8-7129] Port reset in module CE_generator_1kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arriving_bits[10] in module pr_8_data_received is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arriving_bits[9] in module pr_8_data_received is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arriving_bits[0] in module pr_8_data_received is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arriving_bits[10] in module parity_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arriving_bits[0] in module parity_check is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1452.098 ; gain = 553.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1452.098 ; gain = 553.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1452.098 ; gain = 553.277
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1452.098 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/constrs_1/imports/Constraints/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/constrs_1/imports/Constraints/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/constrs_1/imports/Constraints/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_display_PS2_ascii_interface_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_display_PS2_ascii_interface_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/constrs_1/imports/Constraints/Nexys4DDR_PS2.xdc]
+Finished Parsing XDC File [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/constrs_1/imports/Constraints/Nexys4DDR_PS2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.srcs/constrs_1/imports/Constraints/Nexys4DDR_PS2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_display_PS2_ascii_interface_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_display_PS2_ascii_interface_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1550.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1550.105 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'PS2_basic_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'PS2_advanced_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              idle_state |                            00001 |                              000
+              save_state |                            00010 |                              010
+               pulse_end |                            00100 |                              011
+           reset_counter |                            01000 |                              100
+             shift_state |                            10000 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'PS2_basic_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               wait_data |                               00 |                               00
+         release_pending |                               01 |                               01
+           release_event |                               10 |                               11
+             press_event |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'PS2_advanced_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 17    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 15    
+	   5 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (PS2_INST/PS2_advanced_fsm_inst/FSM_sequential_current_state_reg[1]) is unused and will be removed from module top_display_PS2_ascii_interface.
+WARNING: [Synth 8-3332] Sequential element (PS2_INST/PS2_advanced_fsm_inst/FSM_sequential_current_state_reg[0]) is unused and will be removed from module top_display_PS2_ascii_interface.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------------------------+----------------------------+---------------+----------------+
+|Module Name                     | RTL Object                 | Depth x Width | Implemented As | 
++--------------------------------+----------------------------+---------------+----------------+
+|ps2_set2_to_ascii               | convert_set2               | 128x7         | LUT            | 
+|dec_bin_to_7_seg                | seven_segment_outputs      | 32x8          | LUT            | 
+|top_display_PS2_ascii_interface | ASCII_INST/convert_set2    | 128x7         | LUT            | 
+|top_display_PS2_ascii_interface | DEC0/seven_segment_outputs | 32x8          | LUT            | 
+|top_display_PS2_ascii_interface | DEC1/seven_segment_outputs | 32x8          | LUT            | 
+|top_display_PS2_ascii_interface | DEC2/seven_segment_outputs | 32x8          | LUT            | 
+|top_display_PS2_ascii_interface | DEC3/seven_segment_outputs | 32x8          | LUT            | 
+|top_display_PS2_ascii_interface | DEC4/seven_segment_outputs | 32x8          | LUT            | 
+|top_display_PS2_ascii_interface | DEC5/seven_segment_outputs | 32x8          | LUT            | 
+|top_display_PS2_ascii_interface | DEC6/seven_segment_outputs | 32x8          | LUT            | 
+|top_display_PS2_ascii_interface | DEC7/seven_segment_outputs | 32x8          | LUT            | 
++--------------------------------+----------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     2|
+|4     |LUT2   |     4|
+|5     |LUT3   |    45|
+|6     |LUT4   |    33|
+|7     |LUT5   |     6|
+|8     |LUT6   |    36|
+|9     |MUXF7  |    12|
+|10    |FDCE   |    85|
+|11    |FDPE   |     3|
+|12    |FDRE   |    71|
+|13    |IBUF   |     4|
+|14    |OBUF   |    32|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1550.105 ; gain = 651.285
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1550.105 ; gain = 553.277
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1550.105 ; gain = 651.285
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1550.105 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1550.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d5da1bc1
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1550.105 ; gain = 1057.652
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1550.105 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/vivadou_CEP/keyboard_phase_3_improvement/keyboard_phase_3.runs/synth_1/top_display_PS2_ascii_interface.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_display_PS2_ascii_interface_utilization_synth.rpt -pb top_display_PS2_ascii_interface_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 22:33:18 2026...
